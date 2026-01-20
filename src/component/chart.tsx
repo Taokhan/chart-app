@@ -183,7 +183,7 @@ useEffect(() => {
 
   return () => clearInterval(interval);
 
-}, [isPlaying, styledDatasets]);
+}, [isPlaying]);
 
 
   useEffect(() => {
@@ -192,7 +192,7 @@ useEffect(() => {
       chartRef.current.update();
       setPlayIndex(0);
     }
-  }, [isPlaying, styledDatasets]);
+  }, [isPlaying]);
   return (
     <div style={{ width: "100vw", height: "100vh", position: "relative", background: "#0b1220" }}>
       <canvas ref={canvasRef} />
