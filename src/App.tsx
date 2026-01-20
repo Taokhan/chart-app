@@ -4,7 +4,7 @@ import ChartPage from "./component/chart";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/chart-app">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/chart" element={<ChartPage />} />
